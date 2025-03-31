@@ -22,12 +22,20 @@ Es posible con el comando `rqt_graph` poder identificar de una forma visual y gr
 
 A través de este ejercicio simple e introductorio, podemos concluir que el funcionamiento de estos elementos es aquel de comunicar dos nodos distintos de ROS, y si bien era información aleatoria la que se transmitiía con el `talker`, será conocimiento esencial para que distintos nodos de robots y proyectos futuros
 
-# Turtlesim (control por teclado)
+# 3. Turtlesim (control por teclado)
 
 Teniendo en cuenta el conocimiento adquirido de los nodos y la comunicación que puede existir entre estos, para la siguiente sección requeriremos de `turtlesim` con sus bibliotecas y comandos. Comenzando con el primer paso mencionado anteriormente, el cuál es inicializar `roscore` en una terminal y abrir otras tres terminales, una para inicializar la tortuga con `rosrun turtlesim turtlesim_node`, otra para poder controlar la tortuga con el teclado con el comando `rosrun turtlesim turtlesim_teleop_key`, y una última terminal para poder visualizar las coordenadas de la tortuga, las siguientes dos figuras muestran las terminales utilizadas y la gráfica de la tortuga respectivamente:
 
+![Figura 4. Consola de turtlesim](https://github.com/LeonardoCarreraAngeles/Lab_LRT4102/blob/main/Lab2/Images/turtlesimkey.png)
+![Figura 5. Tortuga](https://github.com/LeonardoCarreraAngeles/Lab_LRT4102/blob/main/Lab2/Images/turtleshowing.png)
 
-(Poner aquí imagen de turtlesimkey)
+# 4. Creación de dibujos con turtlesim
+
+Una vez se entendió el funcionamiento de las distintas terminales para turtlesim, es posible generar un código que permita a la tortuga generar dos figuras distintas, en el caso de este laboratorio se exigió hacer un cuadrado y un triángulo equilátero sin hacer uso del controlador de teclado de la sección pasada. Esto se podrá conseguir con un código de Python sencillo que mueva la tortuga a las coordenadas deseadas, dichos códigos pueden ser consultados en la carpeta `src` de esta práctica. Sin embargo, una explicación básica es la de hacer uso de las bibliotecas de turtlesim, en la que usamos la función `t.goto(x,y)` y en los paréntesis se incluyen las coordenadas deseadas a dónde la tortuga debe llegar para formar las figuras, asimismo, se presentan los resultados de ambos códigos:
+
+
+
+
 
 
 
