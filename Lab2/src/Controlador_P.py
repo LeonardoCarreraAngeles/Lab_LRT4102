@@ -1,7 +1,7 @@
 import turtle
 import time
 import math
-
+import csv
 # Configuración de la pantalla. Se establece el tamaño de la ventana.
 screen = turtle.Screen()
 screen.setup(width=600, height=600)
@@ -16,6 +16,7 @@ num_puntas = 5
 radio = 100
 # Ganancia proporcional (Kp).  Ajusta la velocidad del controlador.
 kp = 0.1
+dt = 0.03  # Intervalo de tiempo para el controlador.
 def controlador_p(x_actual, y_actual, objetivo_x, objetivo_y, kp):
     """Calcula las velocidades en x e y basándose en un controlador proporcional."""
     # Calcula el error en x e y.  Diferencia entre la posición actual y el objetivo.
@@ -34,6 +35,10 @@ for i in range(num_puntas):
     y = radio * math.sin(angulo)
     vertices.append((x, y))
     angulo += 4 * math.pi / num_puntas  # Incrementa el ángulo para el siguiente vértice.
+# Ejecutar el controlador y guarda los datos.
+tiempos = []
+errores = []
+tiempo_actual = 0
 # Agrega el primer vértice al final para cerrar la estrella.  Completa la figura.
 vertices.append(vertices[0])
 # Bucle principal para dibujar la estrella. Itera sobre cada vértice.
@@ -53,5 +58,15 @@ for vertice in vertices:
         if distancia_al_objetivo < 1:
             break
         time.sleep(0.03)  # Pequeña pausa. Controla la velocidad de la animación.
+# Guarda el tiempo y el error en listas para análisis posterior.
+        tiempos.append(tiempo_actual)
+        errores.append(distancia_al_objetivo)
+        tiempo_actual += dt
+# Guardar los datos en un archivo CSV
+with open("datos_p.csv", "w", newline="") as archivo_csv:
+    escritor_csv = csv.writer(archivo_csv)
+    escritor_csv.writerow(["Tiempo", "Error"])  # Encabezado
+    for tiempo, error in zip(tiempos, errores):
+        escritor_csv.writerow([tiempo, error])
 
 turtle.done()
