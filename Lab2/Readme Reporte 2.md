@@ -36,7 +36,11 @@ Una vez se entendió el funcionamiento de las distintas terminales para turtlesi
 ![Figura 6. Cuadrado](https://github.com/LeonardoCarreraAngeles/Lab_LRT4102/blob/main/Lab2/Images/SquareTurtle.png)
 ![Figura 7. Triangulo](https://github.com/LeonardoCarreraAngeles/Lab_LRT4102/blob/main/Lab2/Images/TriangleTurtle.png)
 
+# 5. Controladores P, PI y PID
 
+Finalmente, se generaron tres códigos distintos que contienen los controladores que se piden en la última sección del laboratorio, los tres generan la misma figura con las mismas dimensiones: una estrella de 5 puntas. La razón de esta figura es que permite que haya cierta complejidad y asimetría vertical que obligue a la tortuga a generar cambios en la velocidad y de dirección, siendo una prueba valiosa para los distintos controladores que se generaron. La figura siguiente presenta la estrella dibujada por los tres códigos:
+
+![Figura 7. Triangulo](https://github.com/LeonardoCarreraAngeles/Lab_LRT4102/blob/main/Lab2/Images/TriangleTurtle.png)
 
 
 
