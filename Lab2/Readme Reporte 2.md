@@ -1,6 +1,7 @@
 # Lab_2
 
-Este reporte documenta toda la seria
+Este laboratorio explora los fundamentos de la comunicación en ROS (Robot Operating System) y el control de robots mediante la implementación de controladores P, PI y PID. Comenzaremos con un ejercicio básico de comunicación entre nodos utilizando los nodos talker y listener. Posteriormente, utilizaremos turtlesim para comprender el control de un robot simulado mediante teclado y a través de código. Finalmente, implementaremos y compararemos el desempeño de los controladores P, PI y PID para el seguimiento de trayectorias, utilizando el dibujo de una estrella de cinco puntas como caso de estudio. Este ejercicio nos permitirá visualizar y analizar las diferencias entre los controladores en términos de precisión, velocidad y estabilidad.
+
 
 ## 1. Inicialización de roscore:
 
@@ -45,6 +46,12 @@ Finalmente, se generaron tres códigos distintos que contienen los controladores
 Asimismo, se provee la gráfica que ayuda a visualizar la comparactiva entre los tres controladores que se generaron:
 
 ![Figura 8. Graficas](https://github.com/LeonardoCarreraAngeles/Lab_LRT4102/blob/main/Lab2/Images/Graphs.png)
+
+# 6. Conclusiones
+
+A lo largo de este laboratorio, hemos explorado diferentes aspectos de ROS, desde la comunicación básica entre nodos hasta la implementación de controladores para el seguimiento de trayectorias. El ejercicio con talker y listener nos permitió familiarizarnos con la publicación y suscripción de mensajes en ROS. El uso de turtlesim nos proporcionó una plataforma para experimentar con el control de un robot simulado, tanto por teclado como mediante código. Finalmente, la implementación y comparación de los controladores P, PI y PID nos permitió observar cómo diferentes estrategias de control afectan el desempeño del robot al seguir una trayectoria compleja como la de una estrella de cinco puntas. El análisis de las gráficas de error nos permitió visualizar las diferencias entre los controladores en términos de velocidad de convergencia, sobreimpulso, oscilaciones y error estacionario. Este laboratorio proporciona una base sólida para comprender los principios del control de robots y su aplicación en sistemas robóticos más complejos.
+
+
 
 
 
