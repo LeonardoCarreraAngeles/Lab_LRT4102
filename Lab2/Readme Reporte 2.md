@@ -8,5 +8,9 @@ Se inicia el master de ROS, `roscore`, en una terminal.  Este proceso es fundame
 
 ## 2. Colocar archivos listener.py y talker.py
 
+Para la parte básica de este reporte, es necesario colocar los archivos listener y talker para que se comunicen dos nodos distintos de ros, para ello, después de la creación de los paquetes respectivos, se siguen las siguientes líneas de código:
+
+![Listener_talker_code](Lab2/imagenes/Turtlesim1.png)
+
 
 
