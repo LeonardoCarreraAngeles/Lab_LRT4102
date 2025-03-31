@@ -42,7 +42,9 @@ Finalmente, se generaron tres códigos distintos que contienen los controladores
 
 ![Figura 7. Triangulo](https://github.com/LeonardoCarreraAngeles/Lab_LRT4102/blob/main/Lab2/Images/TriangleTurtle.png)
 
+Asimismo, se provee la gráfica que ayuda a visualizar la comparactiva entre los tres controladores que se generaron:
 
+![Figura 8. Graficas](https://github.com/LeonardoCarreraAngeles/Lab_LRT4102/blob/main/Lab2/Images/Graphs.png)
 
 
 
