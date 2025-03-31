@@ -33,6 +33,11 @@ Teniendo en cuenta el conocimiento adquirido de los nodos y la comunicación que
 
 Una vez se entendió el funcionamiento de las distintas terminales para turtlesim, es posible generar un código que permita a la tortuga generar dos figuras distintas, en el caso de este laboratorio se exigió hacer un cuadrado y un triángulo equilátero sin hacer uso del controlador de teclado de la sección pasada. Esto se podrá conseguir con un código de Python sencillo que mueva la tortuga a las coordenadas deseadas, dichos códigos pueden ser consultados en la carpeta `src` de esta práctica. Sin embargo, una explicación básica es la de hacer uso de las bibliotecas de turtlesim, en la que usamos la función `t.goto(x,y)` y en los paréntesis se incluyen las coordenadas deseadas a dónde la tortuga debe llegar para formar las figuras, asimismo, se presentan los resultados de ambos códigos:
 
+![Figura 6. Cuadrado](https://github.com/LeonardoCarreraAngeles/Lab_LRT4102/blob/main/Lab2/Images/SquareTurtle.png)
+![Figura 7. Triangulo](https://github.com/LeonardoCarreraAngeles/Lab_LRT4102/blob/main/Lab2/Images/TriangleTurtle.png)
+
+
+
 
 
 
